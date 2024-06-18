@@ -1,0 +1,21 @@
+{
+  "name": "inlamningsuppgift-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cypress": "^13.11.0",
+    "express": "^4.19.2",
+    "jest": "^29.7.0"
+  }
+}
