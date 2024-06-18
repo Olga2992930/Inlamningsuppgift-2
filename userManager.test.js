@@ -2,7 +2,6 @@ const axios = require('axios')
 const User = require("./user")
 const UserManager = require("./userManager")
 const UserDB = require("./userDB")
-
 jest.mock('axios')
 
 describe("UserManager", () => {
