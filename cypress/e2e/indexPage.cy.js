@@ -22,8 +22,4 @@ describe('template spec', () => {
 
 
 
-     
-
-
-
   })

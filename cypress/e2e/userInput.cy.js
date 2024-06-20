@@ -3,7 +3,7 @@ describe('template spec', () => {
     cy.visit("index.html")
   })
 
-    //Vi simulerar inloggning
+    //Vi simulerar inloggningsprocess
     it('Logga in. Matar: User=Olga, lösenord=Rjn', () => {
     const username = "Olga"
     const password = "Rjn"
@@ -84,7 +84,7 @@ it('Skapa ett konto. Matar: User=Olga, lösenord=Rjn', () => {
   const password1 = "Rjn"
   cy.get("#username1").type(username1)
   cy.get("#password1").type(password1)
-  //Klicka på knappen för att logga in
+  // Klicka på knappen för att logga in
   cy.get("#btnSubmit1").click()
  })
  
@@ -94,7 +94,7 @@ it('Skapa ett konto. Matar: User=Olga, lösenord=Rjn', () => {
   const password1 = " "
   cy.get("#username1").type(username1)
   cy.get("#password1").type(password1)
-  //Klicka på knappen för att logga in
+  // Klicka på knappen för att logga in
   cy.get("#btnSubmit1").click()
  })
 
@@ -109,10 +109,11 @@ it('Skapa ett konto. Matar: User=Olga, lösenord=Rjn', () => {
  })
 
  function userInput (username1 , password1) {
+
 }
  
 })
 
-
+//
 
 
