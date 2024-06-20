@@ -19,6 +19,19 @@ app.listen(portNr, () => {
 
 
 
+
+
+
+//Koppla ett Click-event till btnSubmit och btnSubmit1
+document.getElementById("btnSubmit").addEventListener("click", () => {
+})
+document.getElementById("btnSubmit1").addEventListener("click", () => {
+})
+
+
+
+
+
 //endpoint 1
 app.get("", (req, res) => {
    //res.send("Hello World to everyone!")

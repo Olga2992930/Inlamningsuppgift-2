@@ -11,7 +11,7 @@ describe("UserManager", () => {
 
     beforeEach( () => {
         
-        mockData = new User("marcus", "abc", 1);
+        mockData = new User("Olga", "Rjn", 1);
 
         //Vi skapar en UserDB
         let userDB = new UserDB(axios)
@@ -46,7 +46,7 @@ describe("UserManager", () => {
 
 
     // Test 3
-    it("Spara en ny user", async () => {
+    it("User ät ny", async () => {
         axios.get.mockResolvedValue({data: new User(null, null, null)});
         
         axios.post.mockResolvedValue({data: "Ny User sparad successfully"});
@@ -58,7 +58,7 @@ describe("UserManager", () => {
 
 
     // Test 4
-    it("Spara användaren som redan finns", async () => {
+    it("User är inte ny", async () => {
         axios.get.mockResolvedValue({data: mockData});
 
         let result = await userManager.saveNewUser(mockData)
