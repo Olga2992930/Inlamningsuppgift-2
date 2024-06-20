@@ -110,7 +110,7 @@ it('Skapa ett konto. Matar: User=Olga, lösenord=Rjn', () => {
 
  function userInput (username1 , password1) {
 }
-
+ 
 })
 
 

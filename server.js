@@ -19,16 +19,17 @@ app.listen(portNr, () => {
 
 
 
-
-
-
 //Koppla ett Click-event till btnSubmit och btnSubmit1
-document.getElementById("btnSubmit").addEventListener("click", () => {
-})
-document.getElementById("btnSubmit1").addEventListener("click", () => {
-})
+//document.getElementById("btnSubmit").addEventListener("click", () => {
+ ////Kontrollera värdet på det inmatade namnet
+ //if (username == "Maria") {
+ //   location.assign("About.html")
+ //   }  
+//})
 
 
+//document.getElementById("btnSubmit1").addEventListener("click", () => {
+//})
 
 
 
@@ -37,6 +38,7 @@ app.get("", (req, res) => {
    //res.send("Hello World to everyone!")
 res.sendFile("index.html", {root: __dirname})
 })
+
 
 //endpoint 2
 app.post("", (req, res) => {
@@ -47,8 +49,7 @@ app.post("", (req, res) => {
     fs.writeFile(filePath, jsonStr, (err) => {
         if (err) console.log(err)
     })
-//Return data to sender
-//res.send(jsonStr)
+
 })
 
 
@@ -61,48 +62,10 @@ app.post('/reg', (req, res) => {
     fs.writeFile(filePath, jsonStr1, (err) => {
         if (err) console.log(err)
     })
-//Return data to sender
-//res.send(jsonStr1)
+
 })
 
-
-
-
-
-
-
-
-//endpoint 2
-//app.get("/registrering", (req, res) => {
-   // res.sendFile("registrering.html", {root: __dirname})
- //})
-
-
-//endpoint 4
-//app.post("/registrering", (req, res) => {
-    //Hämta Payload data från request
-    //const data1 = req.body
-    //const jsonStr1 = JSON.stringify(data1, null, 2)
-    //Skriv till fil
-    //fs.writeFile(filePath, jsonStr1, (err) => {
-       // if (err) console.log(err)
-   // })
-//Return data to sender
-//res.send(jsonStr1)
-//})
-
-
-
-app.get("/getData", (req, res) => {
-    //Hämta data från fil.
-    fs.readFile(filePath, 'utf-8', (err, data) => {
-        if (err) console.log(err)
-
-        console.log(data)
-        res.send(JSON.stringify(data, null, 2))
-    })
-})
-
+ 
 
 
 
